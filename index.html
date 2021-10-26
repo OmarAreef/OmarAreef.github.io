@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OA</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,27 +17,31 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- <link rel="stylesheet" href="owl.default.min.css"> -->
+    <!-- <link type='text/css' rel="stylesheet" href="main.css"> -->
 </head>
 
-<body>
-    <div class="preloader w-100" id='preloader'>
+<body style="background:#fafafa96 ;
+box-shadow: 0px 0px 30px -50px  rgba(0, 0, 0, 0.986);">
+    <!-- <div class="preloader w-100" id='preloader'>
         <div class="preloader-bounce container">
             <span></span>
             <span></span>
             <span></span>
         </div>
-    </div>
+    </div> -->
     <div class="main pt-5">
         <div class="container ">
             <div class="row justify-content-center ">
                 <div class="col-sm-10   align-items-center text-center">
-                    <img src="logo.png" alt="" class="logo rotate">
+                    <img src="img/logo.png" alt="" class="logo rotate">
                 </div>
                 <div class="col-sm-10 align-items-center text-center ">
-                    <img src="OA1.png" alt="" class="logo">
+                    <img src="img/OA1.png" alt="" class="logo">
                 </div>
                 <div class="col-sm-10 align-items-center text-center mt-3 ">
-                    <p class="slogan"> When you are my client, you are my only client</p>
+                    <!-- <p class="slogan"> When you are my client, You are my only client</p> -->
                 </div>
             </div>
 
@@ -46,16 +50,16 @@
     <!-- </div> -->
 
     <!-- <div class="container mt-auto"> -->
-    <nav class="navbar navbar-expand-sm pt-1 pb-4 mb-2 " id='navbar'>
+    <nav class="navbar navbar-expand-md pt-1 pb-4 mb-2 " id='navbar' >
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="logo.png" alt="" class="d-inline-block align-text-center navlogo rotate1">
+                <img src="img/logo.png" alt="" class="d-inline-block align-text-center navlogo rotate1">
 
             </a>
             <button class="navbar-toggler btn" id="toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon" style="color: white;"></span>
+                <i class="bi bi-arrow-down-circle" style="color: white ; font-size: 1.4em;"></i>
             </button>
             <div class="collapse navbar-collapse  " id="navbarNav">
                 <ul class="navbar-nav navcs">
@@ -63,14 +67,16 @@
                         <a class="nav-link" aria-current="page" href="#">Home</a>
                     </li> -->
                     <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About me</a>
+                        <a class="nav-link" href="#services" id='servicesNav'>Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="#port" id='portNav'>Portifolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about" id='aboutNav'>About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" id='conNav'>Contact</a>
                     </li>
                 </ul>
             </div>
@@ -86,13 +92,13 @@
         <br id='services'>
 
 
-        <div class="container text-center mt-5 mb-n2">
-            <h1 class="display-3 text-center show ">Services</h1>
+        <div class="container text-center mb-n2">
+            <h1 class="display-3 text-center show  mt-2 " id='servicesText'>Services</h1>
         </div>
-        <section class="row pt-2  justify-content-even ms-auto me-auto ">
+        <section class="row pt-2  justify-content-even ms-auto me-auto " id='servicesSec'>
 
             <div class="col-md-4  col-sm-12 text-center bordercus show mb-2 ">
-                <img src="data1.png" alt="" class="image image-fluid show mb-3">
+                <img src="img/data1.png" alt="" class="image image-fluid show mb-3">
                 <hr class="mx-4 mt-2">
                 <h3 class="text display-5 show">Data Analysis</h3>
                 <p class="show text2 mt-2">I will provide a basic report on a given dataset. <br>
@@ -110,7 +116,7 @@
 
 
             <div class="col-md-4  col-sm-12 text-center bordercus show mb-2">
-                <img src="web1.png" alt="" class="image image-fluid show mb-3">
+                <img src="img/web1.png" alt="" class="image image-fluid show mb-3">
                 <hr class="mx-4 mt-2">
                 <h3 class="text display-5 show">Web applications</h3>
                 <p class="show text2 mt-2 ">Producing Websites based upon your needs.<br>
@@ -128,7 +134,7 @@
 
 
             <div class="col-md-3 col-sm-12 text-center bordercus show mb-2">
-                <img src="db.png" alt="" class="image image-fluid show mb-3">
+                <img src="img/db.png" alt="" class="image image-fluid show mb-3">
                 <hr class="mx-4 mt-2">
                 <h3 class="text display-5 show">Web Scraping</h3>
                 <p class="show text2 mt-2">Gathering data from online web sites. <br>
@@ -144,60 +150,259 @@
             </div>
 
         </section>
-        <!-- </div> -->
-        <br id='about'>
         <br>
+        <br id='port'>
         <div class="container text-center">
-            <h1 class="display-3 text-center mb-n1 mt-5 show">About me</h1>
+            <h1 class="display-3 text-center mb-n1 mt-2 show" id='portText'>Portifolio</h1>
         </div>
-        <section class="container  mt-1 pt-2">
-            <p class='show about' style="font-weight: 400;"> I am a junior computer science undergraduate seeking to
-                apply what I gained during the last 4 years to profitable practice.<br class="mb-3">I have picked up
-                external courses in Web development, data analysis, and statistics along with university courses, which
-                support me in providing my services at a professional level.<br class="mb-3">You can go through my
-                courses, certifications, and experience on my <a
-                    href="https://www.linkedin.com/in/omar-aref-495b5b212/"><strong>LinkedIn.</strong></a><br
-                    class="mb-3">
-                I have conducted several projects in web development and data which could be found on my <a
-                    href="https://github.com/OmarAreef"><strong>Github</strong></a> and this page which is set up also
-                by me. <br class="mb-3">
-                I am very passionate about my work and thrive to deliver the very best I have.
-            </p>
-        </section>
-        <br id='contact'>
-        <br>
-        <div class="container text-center">
-            <h1 class="display-3 text-center mb-n1 mt-5 show">Contact & <br>Pricing </h1>
-        </div>
-        <section class="container  mt-1 pt-2">
-            <!-- <img src= alt="" class="image "> -->
-            <p class='show about' style="font-weight: 400;"> You can contact me directly through mail, just put the type
-                of service you need in the subject and I will respond within 1-2 days. <br>
-            <div class="row align-items-center justify-content-center">
-                <div class="col-2 text-end">
-                    <i class="bi bi-envelope" style=" font-size: 2em;"></i>
+        <section class="container  mt-1 pt-3" id='portSec'>
+            <div class="row mb-0">
+                <h1 class="display-3 show text-center mb-0">Frontend</h1>
+            </div>
+            <div class="owl-carousel show mb-4" style="min-height: 440px;">
+
+                <div class="card   show text-center ">
+
+                    <div class="row mt-2 px-2 mb-1 justify-content-center">
+                        <h1 class="header show text-center"> This Landing page </h1>
+                    </div>
+                    <img class="card-img-top show text-center" src="img/landing.png" alt="Card image cap">
+                    <div class="card-body mt-1">
+                        <p class="card-text show  text-center">
+                            Desingned and built this responsive portfolio page using <br>
+                             HTML, CSS, JavaScript and bootstrap5.
+                        </p>
+                        <div class="d-flex-columns mb-1 fixed-bottom justify-content-center align-content-center">
+                            <span class=" show por-links"><a class="por-links" href="https://omarareef.github.io/">Live <a class="bars"> |</a>
+                            </a></span>
+                            <span class="show por-links "><a class='por-links' href="https://github.com/OmarAreef/OmarAreef.github.io">Code </a></span>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-9 text-start">
-                    <p class="show" style="margin-bottom: 0px; padding-left: 0;"><strong>oaservices.tech@gmail.com</strong></p>
+
+                <div class="card   show text-center">
+
+                    <div class="row mt-2 px-2 mb-1 justify-content-center">
+                        <h1 class="header show text-center"> IEEE landing page </h1>
+                    </div>
+                    <img class="card-img-top show text-center" src="img/IEEE.png" alt="Card image cap">
+                    <div class="card-body mt-1">
+                        <p class="card-text show">Created a landing page for IEEE GUC branch as using<br> EJS6 ,
+                                CSS , JS & bootstrap.<br>
+                            The landing page also included some backend elements like and express server.
+                        </p>
+                        <div class="d-flex-columns mb-1 fixed-bottom justify-content-center align-content-center">
+                            
+                            <span class="show por-links "><a class='por-links' href="https://github.com/OmarAreef/IEEE">Code </a></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <h1 class="display-3 show text-center mb-0">Full-Stack</h1>
+            </div>
+            <div class="owl-carousel show mb-4" style="min-height: 440px;">
+                <div class="card  show text-center">
+
+                    <div class="row mt-2 px-2 mb-1 justify-content-center">
+                        <h1 class="header show text-center"> TrackVac </h1>
+                    </div>
+                    <img class="card-img-top show text-center" src="img/trackvac.png" alt="Card image cap">
+                    <div class="card-body mt-1">
+                        <p class="card-text show">Worked as a team leader in a team of 6 people building a web
+                            application that tracks the quality of service of vaccination centers in Egypt. The
+                            application has full English and Arabic support.<br>
+                            We used EJS6, CSS and bootstrap for the frontend while using <br>
+                            Mongodb and Express serverfor the backend.
+                        </p>
+                        <div class="d-flex-columns mb-1 fixed-bottom justify-content-center align-content-center">
+                            
+                            <span class="show por-links "><a class='por-links' href="http://139.59.215.224:4000/">Live </a></span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <hr class="mx-5 mt-4">
-            <p class="mt-5 show about  " style="font-weight: 400;"> Pricing is based upon the project size however these are some estimations:
-                <ul class="text1 show">
-                    <li  class="text1 show">Data Analysis: an estimated fee 10 USD/hr </li>
-                    <li class="text1 show">Web Applications: depends on the number of functionalties the site will have an estimated fee of 8 USD/hr </li>
-                    <li class="text1 show">Web Scraping: depends on how many pages are being scraped  </li>
-                </ul>
-            </p>
-            </p>
-        </section>
+            <div class="row ">
+                <h1 class="display-3 show text-center mb-0">Data Analysis</h1>
+            </div>
+            <div class="owl-carousel show mb-4" style="min-height: 440px;">
+                <div class="card   show text-center">
+
+                    <div class="row mt-2 px-2 mb-1 justify-content-center">
+                        <h1 class="header show text-center"> Hollywood Movies Profit's Trends </h1>
+                    </div>
+                    <img class="card-img-top show text-center" src="img/trackvac.png" alt="Card image cap">
+                    <div class="card-body mt-1">
+                        <p class="card-text show">Cleaned and Wrangled a data set of Hollywood movies from IMDB.
+                            Performed exploratory data analysis to find that movies that made the most profit are
+                            animation movies whose runtime is between 120 and 200 minutes and were released in the
+                            summer. I used <br>
+                            Python's Pandas, Numpy and Matplotlib and used Jupyter Notebook.
+                        <div class="d-flex-columns mb-1 fixed-bottom justify-content-center align-content-center">
+
+
+                            <span class=" show por-links"><a class="por-links" href="freelance/Investigate_a_Dataset.pdf" download>PDF <a class="bars"> |</a>
+                                </a></span>
+
+
+                            <!-- <div class="vr col-1"></div> -->
+
+                            <span class="show por-links "><a class='por-links' href="https://github.com/OmarAreef/Dataset_analyses/blob/main/Investigate_a_Dataset.ipynb">Code </a></span>
+
+                            <!-- <div class="vr col-1"></div> -->
+
+                            <!-- <span class="show por-links"><a class='por-links' href="">Slides</a></span> -->
+
+                        </div>
+                        </p>
+                    </div>
+                </div>
+                <div class="card   show text-center">
+
+                    <div class="row mt-2 px-2 mb-1 justify-content-center">
+                        <h1 class="header show text-center"> Analyze A/B testing results </h1>
+                    </div>
+                    <img class="card-img-top show text-center" src="img/trackvac.png" alt="Card image cap">
+                    <div class="card-body mt-1">
+                        <p class="card-text show">Analyzed a given dataset by an e-commerce company to know wether the
+                            changes they made to a page had pracitcal significance on wether the user interacted more
+                            with the page or not.<br>
+                            Three methods of analysis were used: Descriptive statistics, Inferential statistics &
+                            Hypothesis Testing and finally Regression models and all gave the same results that the page
+                            did not have statistical significance</p>
+                        <div class="d-flex-columns mb-1 fixed-bottom justify-content-center align-content-center">
+
+
+                            <span class=" show por-links"><a class="por-links" href="freelance/Analyze_ab_test_results_notebook.pdf" download> PDF <a class="bars"> |</a>
+                                </a></span>
+
+
+                            <!-- <div class="vr col-1"></div> -->
+
+                            <span class="show por-links "><a class='por-links' href="https://github.com/OmarAreef/A-B-test">Code 
+                                </a></span>
+
+                            <!-- <div class="vr col-1"></div> -->
+
+                            
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card   show text-center">
+
+                    <div class="row mt-2 px-2 mb-1 justify-content-center">
+                        <h1 class="header show text-center"> Ford GoBike System data </h1>
+                    </div>
+                    <img class="card-img-top show text-center" src="img/trackvac.png" alt="Card image cap">
+                    <div class="card-body mt-1">
+                        <div class="row">
+                            <p class="card-text show">Cleaned and Wrangled a dataset including data about bike trips
+                                gathered by Ford Gobike System. After that deduced that the trips had a longer duration
+                                on weekends and how much further a station is from the other stations by mapping out the
+                                locations of the stations and visualising the the average trip duration that started for
+                                each station. </p>
+                        </div>
+                        <div class="d-flex-columns mb-1 fixed-bottom justify-content-center align-content-center">
+
+
+                            <span class=" show por-links"><a class="por-links" href="freelance/Ford_gobike.html" download>PDF <a class="bars"> |</a>
+                                </a></span>
+
+
+                            <!-- <div class="vr col-1"></div> -->
+
+                            <span class="show por-links "><a class='por-links' href="https://github.com/OmarAreef/Fordbike#readme">Code <a class="bars"> |</a>
+                                </a></span>
+
+                            <!-- <div class="vr col-1"></div> -->
+
+                            <span class="show por-links"><a class='por-links' href="freelance/slides1.slides.html" download>Slides</a></span>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+    <!-- </div> -->
+    <br id='about'>
+    <br>
+    <div class="container text-center">
+        <h1 class="display-3 text-center mb-n1 mt-2 show" id='aboutText'>About me</h1>
+    </div>
+    <section class="container  mt-1 pt-2" id='aboutSec'>
+        <p class='show about text-center' style="font-weight: 400;"> I am a junior computer science undergraduate
+            seeking to apply what I gained during the last 4 years to profitable practice.</p>
+        <p class='show about text-start' style="font-weight: 400;">I have picked up
+            external courses in Web development, data analysis, and statistics along with university courses, which
+            support me in providing my services at a professional level.
+        <p class='show about text-center' style="font-weight: 400;">You can go through my
+            courses, certifications, and experience on my <a
+                href="https://www.linkedin.com/in/omar-aref-495b5b212/"><strong>LinkedIn</strong></a>.</p>
+        <p class='show about text-start' style="font-weight: 400;">
+            I have conducted several projects in web development and data which could be found on my <a
+                href="https://github.com/OmarAreef"><strong>Github</strong></a> and this page which is set up also
+            by me.</p>
+        <br class="mt-3">
+        <p class='show about text-end' style="font-weight: 400;">
+            I am very passionate about my work and thrive to deliver the very best I have.
+        </p>
+    </section>
+    <br id='contact'>
+    <br>
+    <div class="container text-center">
+        <h1 class="display-3 text-center mb-n1 mt-4 show" id='conText'>Contact</h1>
+    </div>
+    <section class="container  mt-2 pt-2 d-flex flex-column align-content-center" id='conSec'>
+        <!-- <img src= alt="" class="image "> -->
+
+        <div class="row align-items-center justify-content-center">
+            <!-- <div class="col-2 text-end">
+                <i class="bi bi-envelope" style=" font-size: 2em;"></i>
+            </div> -->
+            <div class="col-9 text-center card show h-50 py-3 mt-2 px-2" >
+                <!-- <p class="show" style="margin-bottom: 0px; padding-left: 0;">
+                    <strong>oaservices.tech@gmail.com</strong>
+                </p> -->
+                <div class="row px-1 justify-content-around">
+                    <a href="https://github.com/OmarAreef" class="col-sm-4 col-md-2 contact-link mx-1 px-2">
+                        <i class="bi bi-github" style=" font-size: 2em;"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/omar-aref-495b5b212/" class="col-sm-4 col-md-2 contact-link mx-1 px-2">
+                        <i class="bi bi-linkedin" style=" font-size: 2em;"></i>
+                    </a>
+                    <a href="https://www.upwork.com/freelancers/~01d2505e551c883189" class="col-sm-5 col-md-2 contact-link mx-1 px-2">
+                        <i class="bi "><img src="img/upwork_icon.png" alt=""></i>
+                    </a>
+                    <a href="mailto:oaservices.tech@gmail.com" class="col-sm-5 col-md-2 contact-link mx-1 px-2">
+                        <i class="bi bi-envelope" style=" font-size: 2em;"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <!-- <p class='show about text-center mt-4' style="font-weight: 300; font-size: 1.2rem;"> You can contact me directly through mail, just put the type
+            of service you need in the subject and I will respond within 1-2 days. <br>
+        </p> -->
+    </section>
 
     </div>
+    <script src="js/jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    <script src="index.js"></script>
-    <script src="showScroll.js"></script>
+
+    <script src="js/showNav.js"></script>
+    <script src="js/showScroll.js"></script>
+    <script src="js/index.js"></script>
+
+
+    <!-- <script src="jquery.min.js"></script> -->
+    <script src="js/owl.carousel.min.js"></script>
 </body>
 
 </html>
