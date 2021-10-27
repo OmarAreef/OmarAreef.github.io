@@ -21,8 +21,8 @@ $(window).on('load', function () {
         // autoplayTimeout: 2500,
        responsive :{
         0: {
-            stagePadding: 14,
-            margin: 12
+            stagePadding: 28,
+            margin: 14
         },
         370 : {
             stagePadding: 30,

@@ -106,11 +106,14 @@ h1.is-visible{
 
 .logo {
     width: clamp(250px , 37% ,380px);
-   
+    
     /* max-width: 40%; */
     /* border: 2px solid #5e17eb ; */
     /* border-radius: 12px; */
    
+}
+.nav-link {
+  /* text-shadow: 0px 0px 1px  #fff ;  */
 }
 p.slogan {
   font-size: 1.3em;
@@ -449,8 +452,8 @@ strong::before , span::before{
   margin-top: 10px;
   margin-bottom: 10px;
   background-color: #ffffffc4  !important;
-  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.418)
-  ,0px 0px 10px 3px #a397ff88;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.13)
+  ,0px 0px 8px 2px #a397ff70;
   border-radius: 20px !important;
   border: 1px solid #a397ff60 !important;
   backdrop-filter: blur(30px) !important;
@@ -548,7 +551,7 @@ html {
   font-family: 'roboto';
 }
 .card-img-top {
-  width: clamp(250px , 60% , 400px) !important;
+  width: clamp(200px , 60% , 350px) !important;
   min-height: 140px;
   border-radius: 20px !important;
   margin-left: auto !important;
@@ -602,9 +605,7 @@ a.contact-link:before {
   border-bottom :2px dotted #a397ff86;
   /* border-radius: 7%; */
 }
-a.contact-link:hover::before{
-  /* animation: borderlink2 1s linear 0.1s 1 forwards ;  */
-}
+
 .navbar-toggler {
   transform: rotate(0.5turn);
   transition: all ease-in 250ms !important;
@@ -655,6 +656,10 @@ a.contact-link:hover::before{
     height: 100%;
     left: 100%;
   } */
+}
+#conSec {
+  max-height:  60vh !important;
+  min-height: 60vh ;
 }
 @media (max-width:450px) {
   p , strong {
